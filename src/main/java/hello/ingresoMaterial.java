@@ -1,20 +1,26 @@
 package hello;
 
-public class Greeting {
+public class ingresoMaterial {
 
-    private final long id;
-    private final String content;
+    private final int codigo;
+    private final int cantidad;
+    private final String bodega;
 
-    public Greeting(long id, String content) {
-        this.id = id;
-        this.content = content;
+    public ingresoMaterial(int codigo, int cantidad, String bodega) {
+        this.codigo = codigo;
+        this.cantidad = cantidad;
+        this.bodega = bodega;
     }
 
-    public long getId() {
-        return id;
+    public int getCodigo() {
+        return codigo;
     }
 
-    public String getContent() {
-        return content;
+    public int getCantidad() {
+        return cantidad;
+    }
+
+    public String getBodega() {
+        return bodega;
     }
 }
